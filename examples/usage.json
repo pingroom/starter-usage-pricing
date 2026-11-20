@@ -1,0 +1,93 @@
+{
+  "usageId": "paper-print-demo",
+  "title": "Sealed paper print usage",
+  "context": "Consult the signed paper print contract. Rates are fictional.",
+  "usage": [
+    {
+      "id": "batch-east",
+      "meterId": "pages",
+      "unit": "page",
+      "quantity": "75"
+    },
+    {
+      "id": "batch-west",
+      "meterId": "pages",
+      "unit": "page",
+      "quantity": "50"
+    },
+    {
+      "id": "covers",
+      "meterId": "covers",
+      "unit": "cover",
+      "quantity": "12"
+    }
+  ],
+  "rateCards": [
+    {
+      "id": "a",
+      "label": "Standard paper plan",
+      "reference": "Contract A section 2",
+      "currency": "USD",
+      "minorUnitExponent": 2,
+      "meters": [
+        {
+          "meterId": "pages",
+          "unit": "page",
+          "tiers": [
+            {
+              "upTo": "100",
+              "unitAmountMinor": "5"
+            },
+            {
+              "upTo": null,
+              "unitAmountMinor": "3"
+            }
+          ]
+        },
+        {
+          "meterId": "covers",
+          "unit": "cover",
+          "tiers": [
+            {
+              "upTo": null,
+              "unitAmountMinor": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "label": "Workshop paper plan",
+      "reference": "Contract B section 4",
+      "currency": "USD",
+      "minorUnitExponent": 2,
+      "meters": [
+        {
+          "meterId": "pages",
+          "unit": "page",
+          "tiers": [
+            {
+              "upTo": "100",
+              "unitAmountMinor": "4"
+            },
+            {
+              "upTo": null,
+              "unitAmountMinor": "2"
+            }
+          ]
+        },
+        {
+          "meterId": "covers",
+          "unit": "cover",
+          "tiers": [
+            {
+              "upTo": null,
+              "unitAmountMinor": "6"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
